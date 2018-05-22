@@ -20,7 +20,6 @@ public protocol NitsItemProtocol: Equatable{
 public protocol NitsLRUProtocol {
     var totalCost: UInt {set get}
     var totalCount: UInt {set get}
-    
 }
 
 public protocol LinkNodeProtocol {
