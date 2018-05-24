@@ -15,7 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var dic : Dictionary<String, Any>?
     var arr : Array<String>?
+    var nits: Nits<String,Any> = Nits.init("name", costLimit: 1000, countLimit: 10)
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        for i in 0...20 {
+            nits.setObject(key: String(i), value: String(i))
+        }
+        
+        while let obj = nits.next() {
+            print(obj.0,obj.1)
+        }
         // Override point for customization after application launch.
         return true
     }

@@ -1,0 +1,6 @@
+framework module Pods_NitsDemo {
+  umbrella header "Pods-NitsDemo-umbrella.h"
+
+  export *
+  module * { export * }
+}

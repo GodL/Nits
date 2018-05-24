@@ -9,12 +9,11 @@
 import Foundation
 
 public protocol NitsItemProtocol: Equatable{
-    associatedtype Key
-    associatedtype Value
-    var key: Key {set get}
-    var value: Value {set get}
-    var cost: Int {set get}
-    var time: TimeInterval {set get}
+    associatedtype KeyType
+    associatedtype ValueType
+    var key: KeyType {set get}
+    var value: ValueType {set get}
+    var cost: UInt {set get}
 }
 
 public protocol NitsLRUProtocol {

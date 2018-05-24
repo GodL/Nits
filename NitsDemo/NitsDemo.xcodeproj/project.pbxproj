@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813EC44AD04A708E725DCAC4 /* Pods_NitsDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DAE1CAC23EAD50BFA41905E /* Pods_NitsDemo.framework */; };
 		885A85F720B2733F00365AD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A85F620B2733F00365AD6 /* AppDelegate.swift */; };
 		885A85F920B2733F00365AD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885A85F820B2733F00365AD6 /* ViewController.swift */; };
 		885A85FC20B2733F00365AD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 885A85FA20B2733F00365AD6 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0030C73F76FE40F074869A77 /* Pods-NitsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NitsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NitsDemo/Pods-NitsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		4DAE1CAC23EAD50BFA41905E /* Pods_NitsDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NitsDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		885A85F320B2733F00365AD6 /* NitsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NitsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		885A85F620B2733F00365AD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		885A85F820B2733F00365AD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		885A862520B2739B00365AD6 /* Nits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nits.swift; sourceTree = "<group>"; };
 		885A862720B2B25B00365AD6 /* NitsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitsProtocol.swift; sourceTree = "<group>"; };
 		885A862920B2C99900365AD6 /* NitsLRU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NitsLRU.swift; sourceTree = "<group>"; };
+		D5AB27A96FD46C4F3FCCFBBC /* Pods-NitsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NitsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NitsDemo/Pods-NitsDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813EC44AD04A708E725DCAC4 /* Pods_NitsDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C3A8C1BC4B7ADDCBB16872F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0030C73F76FE40F074869A77 /* Pods-NitsDemo.debug.xcconfig */,
+				D5AB27A96FD46C4F3FCCFBBC /* Pods-NitsDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		885A85EA20B2733F00365AD6 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +102,8 @@
 				885A860A20B2734500365AD6 /* NitsDemoTests */,
 				885A861520B2734500365AD6 /* NitsDemoUITests */,
 				885A85F420B2733F00365AD6 /* Products */,
+				5C3A8C1BC4B7ADDCBB16872F /* Pods */,
+				E5957962B99067B218E7B9AD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -142,6 +158,14 @@
 			path = Nits;
 			sourceTree = "<group>";
 		};
+		E5957962B99067B218E7B9AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DAE1CAC23EAD50BFA41905E /* Pods_NitsDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,6 +173,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 885A861B20B2734500365AD6 /* Build configuration list for PBXNativeTarget "NitsDemo" */;
 			buildPhases = (
+				644A1364C1ED52E638973DE0 /* [CP] Check Pods Manifest.lock */,
 				885A85EF20B2733F00365AD6 /* Sources */,
 				885A85F020B2733F00365AD6 /* Frameworks */,
 				885A85F120B2733F00365AD6 /* Resources */,
@@ -267,6 +292,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		644A1364C1ED52E638973DE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NitsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		885A85EF20B2733F00365AD6 /* Sources */ = {
@@ -448,14 +494,12 @@
 		};
 		885A861C20B2734500365AD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0030C73F76FE40F074869A77 /* Pods-NitsDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NitsDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GodL.NitsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -465,14 +509,12 @@
 		};
 		885A861D20B2734500365AD6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AB27A96FD46C4F3FCCFBBC /* Pods-NitsDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NitsDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GodL.NitsDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -487,11 +529,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NitsDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GodL.NitsDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -507,11 +545,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NitsDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GodL.NitsDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -526,11 +560,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NitsDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GodL.NitsDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -545,11 +575,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = NitsDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GodL.NitsDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
